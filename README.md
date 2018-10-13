@@ -1,2 +1,2 @@
 # ProgrammingInterviewsExposed
-Solutions for Programming Interviews Exposed
+Solutions for Programming Interviews Exposed problems

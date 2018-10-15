@@ -1,6 +1,6 @@
 package LinkedLists;
 
-public class MaintainLinkedListTailPointer {
+public class MaintainTailPointer {
     private Node head;
     private Node tail;
 
@@ -70,7 +70,7 @@ public class MaintainLinkedListTailPointer {
     }
 
     public static void main(String[] args) {
-        MaintainLinkedListTailPointer stack = new MaintainLinkedListTailPointer();
+        MaintainTailPointer stack = new MaintainTailPointer();
         stack.insertAfter(null,1);
         System.out.println(stack.getHead().value);
         System.out.println(stack.getTail().value);

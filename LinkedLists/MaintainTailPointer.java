@@ -70,23 +70,23 @@ public class MaintainTailPointer {
     }
 
     public static void main(String[] args) {
-        MaintainTailPointer stack = new MaintainTailPointer();
-        stack.insertAfter(null,1);
-        System.out.println(stack.getHead().value);
-        System.out.println(stack.getTail().value);
+        MaintainTailPointer linkedList = new MaintainTailPointer();
+        linkedList.insertAfter(null,1);
+        System.out.println(linkedList.getHead().value);
+        System.out.println(linkedList.getTail().value);
         System.out.println();
 
-        stack.insertAfter(null,2);
-        System.out.println(stack.getHead().value);
-        System.out.println(stack.getTail().value);
+        linkedList.insertAfter(null,2);
+        System.out.println(linkedList.getHead().value);
+        System.out.println(linkedList.getTail().value);
         System.out.println();
 
-        stack.delete(stack.getTail());
-        System.out.println(stack.getHead().value);
-        System.out.println(stack.getTail().value);
+        linkedList.delete(linkedList.getTail());
+        System.out.println(linkedList.getHead().value);
+        System.out.println(linkedList.getTail().value);
         System.out.println();
 
-        stack.delete(stack.getHead());
-        System.out.println(stack.isEmpty());
+        linkedList.delete(linkedList.getHead());
+        System.out.println(linkedList.isEmpty());
     }
 }

@@ -33,6 +33,6 @@ public class MthToLastElement {
         linkedList.add(3);
         linkedList.add(2);
         linkedList.add(1);
-        System.out.println(getMthToLast(1).value);
+        System.out.println(getMthToLast(2).value);
     }
 }

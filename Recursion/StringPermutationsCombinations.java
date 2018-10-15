@@ -1,6 +1,6 @@
 package Recursion;
 
-public class StringPermutations {
+public class StringPermutationsCombinations {
     public static void main(String[] args) {
         String s = "abc";
         findPermutations(s);

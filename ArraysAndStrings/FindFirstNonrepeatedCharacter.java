@@ -3,7 +3,7 @@ package ArraysAndStrings;
 import java.util.HashMap;
 
 public class FindFirstNonrepeatedCharacter {
-    public static Character find(String s) {
+    public static Character findFirstNonrepeatedCharacter(String s) {
         HashMap<Character, Integer> charCountMap = new HashMap();
         for (int i = 0; i < s.length(); i++) {
             charCountMap.putIfAbsent(s.charAt(i), 0);
@@ -19,6 +19,6 @@ public class FindFirstNonrepeatedCharacter {
     }
 
     public static void main(String[] args) {
-        System.out.println(find("teeter"));
+        System.out.println(findFirstNonrepeatedCharacter("teeter"));
     }
 }

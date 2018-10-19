@@ -38,7 +38,7 @@ public class PreorderTraversal {
         Node sixth = new Node(6);
         Node seventh = new Node(7);
         Node eighth = new Node(8);
-        Node nine = new Node(9);
+        Node ninth = new Node(9);
 
         first.left = second;
         first.right = third;
@@ -46,7 +46,7 @@ public class PreorderTraversal {
         third.left = fifth;
         third.right = sixth;
         fourth.left = seventh;
-        fifth.left = nine;
+        fifth.left = ninth;
         seventh.right = eighth;
 
         traversePreorderRecursive(first);

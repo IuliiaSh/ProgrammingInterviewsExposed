@@ -15,10 +15,10 @@ public class BinaryTreeToHeap {
         toBeAdded.offer(root);
         System.out.println(root.value);
         int i = 1;
-        Node next;
+        Node nextNode;
         while (i < array.length) {
-            next = toBeAdded.remove();
-            next.left = array[i];
+            nextNode = toBeAdded.remove();
+            nextNode.left = array[i];
             toBeAdded.offer(array[i]);
             System.out.println(array[i].value);
             i++;
@@ -26,7 +26,7 @@ public class BinaryTreeToHeap {
             if (i == array.length) {
                 break;
             }
-            next.right = array[i];
+            nextNode.right = array[i];
             toBeAdded.offer(array[i]);
             System.out.println(array[i].value);
             i++;
@@ -45,20 +45,20 @@ public class BinaryTreeToHeap {
 
     private static Node[] getSortedArray(Node root) {
         ArrayList<Node> arrayList = new ArrayList();
-        getArray(root, arrayList);
+        getArrayList(root, arrayList);
         Node[] array = arrayList.toArray(new Node[arrayList.size()]);
         Arrays.sort(array, Comparator.comparingInt(o -> ((Node) o).value));
         return array;
     }
 
-    public static void getArray(Node root, ArrayList<Node> array) {
+    public static void getArrayList(Node root, ArrayList<Node> array) {
         if (root == null) {
             return;
         }
 
         array.add(root);
-        getArray(root.left, array);
-        getArray(root.right, array);
+        getArrayList(root.left, array);
+        getArrayList(root.right, array);
     }
 
     public static void main(String[] args) {
